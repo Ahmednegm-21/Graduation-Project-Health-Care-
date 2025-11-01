@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:healthfy/ui/screens/sign_in_screen.dart';
 import 'dart:async';
-import 'onboarding1.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -57,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen>
     Timer(const Duration(seconds: 4), () {
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const OnboardingScreen()),
+        MaterialPageRoute(builder: (context) => const SignInScreen()),
       );
     });
   }
